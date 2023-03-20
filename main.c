@@ -1,6 +1,6 @@
 
 Section .data
-
+main()
 WELCOME_MSG       db "Welcome to your friendly area calculator.",13,10
 WELCOME_MSG_LEN  equ $-WELCOME_MSG
 

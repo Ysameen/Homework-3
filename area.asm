@@ -1,7 +1,5 @@
 section .data
 
-PI: .float 3.1415926
-RADIUS: .float ?
 
 AREA_STRING            db "This area function is fondly brought to you by Yasmeen Plascencia.",16,10
 AREA_STRING_LEN        equ $-AREA_STRING
@@ -19,9 +17,11 @@ MAIN_STRING_LEN        equ $-MAIN_STRING
 
 .text
 l.s $f12 PI 
-l.s $f14, ra dius 
+l.s $f14, radius 
 mul.s $f12, $f12,$f14 #PI * radius
 mul.s $f12, $f12 $f14 #PI * radius * radius = .result, .float ?
 li $v0 2 
 syscall = meters: .float ?
 
+PI: .float 3.1415926
+RADIUS: .float ?
